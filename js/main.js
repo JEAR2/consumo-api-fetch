@@ -50,11 +50,11 @@ d.addEventListener("submit",async e => {
                         constelacion : e.target.constelacion.value
                     })
                 }, res = await fetch("http://localhost:3333/santos",options),
-                 json = await res.json();
+                    json = await res.json();
 
-                 if(!res.ok) throw {status:res.status, statusText: res.statusText};
+                    if(!res.ok) throw {status:res.status, statusText: res.statusText};
 
-                 location.reload();
+                    location.reload();
             } catch (error) {
                 let message = error.statusText || "ocurrió un error";
                 $form.insertAdjacentHTML("afterend",`<p><b>Error ${error.status}: ${message}</b></p>`);
@@ -72,11 +72,11 @@ d.addEventListener("submit",async e => {
                         constelacion : e.target.constelacion.value
                     })
                 }, res = await fetch(`http://localhost:3333/santos/${e.target.id.value}`,options),
-                 json = await res.json();
+                    json = await res.json();
 
-                 if(!res.ok) throw {status:res.status, statusText: res.statusText};
+                    if(!res.ok) throw {status:res.status, statusText: res.statusText};
 
-                 location.reload();
+                    location.reload();
             } catch (error) {
                 let message = error.statusText || "ocurrió un error";
                 $form.insertAdjacentHTML("afterend",`<p><b>Error ${error.status}: ${message}</b></p>`);
@@ -104,14 +104,14 @@ d.addEventListener("click", async e => {
                         "Content-type" : "application/json; charset=utf-8"
                     }
                 }, res = await fetch(`http://localhost:3333/santos/${e.target.dataset.id}`,options),
-                 json = await res.json();
+                    json = await res.json();
 
-                 if(!res.ok) throw {status:res.status, statusText: res.statusText};
+                    if(!res.ok) throw {status:res.status, statusText: res.statusText};
 
-                 location.reload();
+                    location.reload();
             } catch (error) {
                 let message = error.statusText || "ocurrió un error";
-               alert(`Error ${error.status}: ${message}`);
+                alert(`Error ${error.status}: ${message}`);
             }
         }
     }
