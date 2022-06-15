@@ -18,3 +18,7 @@ Imágenes información db.json y vista final y servidor ejecutando
 ![image](https://user-images.githubusercontent.com/106001562/173890199-eae3dde7-4ae7-4501-9863-94ca51a639d6.png)
 
 ![image](https://user-images.githubusercontent.com/106001562/173890271-c5b5ba2c-dec2-479d-b3cc-6b0ec3efb016.png)
+
+
+--
+Información tomada del curso JavaScript | jonmircha Youtube
