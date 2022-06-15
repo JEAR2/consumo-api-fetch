@@ -5,23 +5,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CRUD API REST FETCH</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     </head>
     <body>
-        <h1>CRUD API REST FETCH</h1>
-        <section id="crud">
-       
-        </section>
+        <div class="container p-3 my-3 border">
+            <div >
+                <h1 style="text-align: center;">CRUD API REST FETCH</h1>
+                <section id="crud">
+            
+                </section>
+             </div>
         <template id="crud-template">
             <tr>
                 <td class="name"></td>
                 <td class="constellation"></td>
                 <td>
-                    <button class="edit">Editar</button>
-                    <button class="delete">Eliminar</button>
+                    <button class="edit btn btn-warning">Editar</button>
+                    <button class="delete btn btn-danger">Eliminar</button>
                 </td>
             </tr>
         </template>
+    </div>
         <script src="js/struct.js"></script>
         <script src="js/main.js"></script>
     </body>
